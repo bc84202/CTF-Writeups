@@ -1,0 +1,3 @@
+We are given aeg{at_imuf_nussqd_zgynqd_paqezf_yqmz_yadq_eqogdq} and told that it has been rotated 727 times
+
+The flag can be found by putting it into cyberchef and rotating it 14 times, getting osu{oh_wait_bigger_number_doesnt_mean_more_secure}
