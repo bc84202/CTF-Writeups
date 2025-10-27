@@ -35,6 +35,7 @@ out.save("output.png")
 ```
 
 output.png:
+
 ![Output](images/output.png)
 
 ### **Solution**
@@ -92,6 +93,7 @@ inverse(img).save("flag.png")
 ```
 I saved the resutling image to `flag.png` to see how it looked and it ended up looking like this:
 ![Flag](images/flag.png)
+
 From here, we can see that the flag is already visible, and turns out we didn't need to reverse the xors after all.
 
 The flag is: `osu{h1_05u_d351gn_t34m}`
