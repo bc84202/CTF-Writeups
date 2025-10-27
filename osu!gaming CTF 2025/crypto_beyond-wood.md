@@ -49,7 +49,7 @@ We first want to move each pixel back to its original location. The formula for 
  `newi, newj = (2134266 + i * 727) % width, (4501511 + j * 727) % height ` \
  So we can just write out the inverse as so:\
   `i, j = (inv_w * (newi - 2134266)) % width, (inv_h * (newj - 4501511)) % height`\
-where `inv_w` is the modular inverse of `727 modulo width` and `inv_h` is the modular inverse of `727 modulo height`
+where `inv_w` is the modular inverse of `727 modulo width` and `inv_h` is the modular inverse of `727 modulo height`. Note that we can do this because `gcd(727, width) = 1` and `gcd(727, height) = 1`.
 
 So far, we have reversed the second step and have the script here:
 ```
