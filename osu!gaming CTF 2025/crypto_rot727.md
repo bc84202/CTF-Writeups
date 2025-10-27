@@ -16,4 +16,5 @@ Author: wwm
 ### **Solution**
 
 The flag can be found by putting it into cyberchef and rotating it 14 times.
+
 The flag is: `osu{oh_wait_bigger_number_doesnt_mean_more_secure}`
