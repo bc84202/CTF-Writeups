@@ -1,6 +1,10 @@
+## **osu/welcome**
+
 ### **Challenge Information**
 
 ```
+osu/welcome
+496 solves / 104 points
 Welcome to osu!gaming CTF 2025 (Rhythm Game Edition). Please join our Discord for challenge updates and admin support.
 
 Have fun!
