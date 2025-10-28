@@ -97,4 +97,4 @@ Running the script gives me: `"hello there can you pls nominate my map https://o
 
 Interestingly, you had to add $N$ to $C$ 254 times before you get a perfect fifth power. The standard Håstad’s Broadcast Attack actually assumes that $m^e < N$, which gives $m^e=C$, but that wasn't the case here, likely because of all the extra buffer the author put into the plaintext that made $m$ really big.
 
-The flag is: `osu{pr3tty_pl3453_w1th_4_ch3rry_0n_t0p!?:pleading:}`.
+The flag is: `osu{pr3tty_pl3453_w1th_4_ch3rry_0n_t0p!?:pleading:}`
