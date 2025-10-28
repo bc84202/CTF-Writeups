@@ -78,11 +78,11 @@ def mod_inv(a, b):
         x1 += b0
     return x1
 
+c = chinese_remainder(ns, outs)
+
 n = 1
 for i in ns:
     n = n * i
-
-c = chinese_remainder(ns, outs)
 
 while True:
     r, exact = gmpy2.iroot(c, 5)
