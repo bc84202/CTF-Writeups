@@ -41,7 +41,7 @@ output.txt:
 From the source code, we can see that the flag is encoded using RSA with 5 different sets of public keys. The public exponent is always 5, but the modulus is different every time. We are given the modulus and the ciphertext for all 5 sets of encryptions.
 
 From here, we can perform a Håstad’s Broadcast Attack. What this attack does is that it uses the Chinese Remainder Theorem to combine the 5 congruences
-$m^e \equiv c_i \ (\text{mod } N_i)\text{ for all }i\in$ {$1, 2, 3, 4, 5$}
+$m^e \equiv c_i \ (\text{mod } N_i)\text{ for all }i\in$ {1, 2, 3, 4, 5}
 to give me a $C$ such that
 $C\equiv m^e \ (\text{mod } N)$
 where $N = N_1N_2N_3N_4N_5$.
