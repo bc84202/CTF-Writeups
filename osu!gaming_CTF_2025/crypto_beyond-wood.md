@@ -60,23 +60,10 @@ A1 = 2134266
 A2 = 4501511
 MUL = 727
 
-def mod_inv(a, b):
-    b0 = b
-    x0, x1 = 0,1
-    if b == 1:
-        return 1
-    while a > 1:
-        q = a // b
-        a , b = b, a%b
-        x0, x1 = x1 -q*x0, x0
-    if x1 < 0:
-        x1 += b0
-    return x1
-
 def inverse(img):
     width, height = img.size
-    inv_w = mod_inv(MUL, width)
-    inv_h = mod_inv(MUL, height)
+    inv_w = pow(MUL, -1, width)
+    inv_h = pow(MUL, -1, height)
 
     flag = Image.new("RGB", (width, height))
     out = img.load()
