@@ -11,6 +11,7 @@ https://forms.gle/ocAr8RSgmUHZ2ArH9
 
 Author: osu!gang
 ```
+
 ### **Solution**
 
 I clicked the link to fill out the survey. The flag was at the end of the survey.

@@ -11,6 +11,7 @@ Have fun!
 
 Author: osu!gang
 ```
+
 ### **Solution**
 
 I joined the discord server and the flag was in announcements.

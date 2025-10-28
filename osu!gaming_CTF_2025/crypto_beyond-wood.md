@@ -1,6 +1,7 @@
 ## **crypto/beyond-wood**
 
 ### **Challenge Information**
+
 ```
 crypto/beyond-wood
 392 solves / 106 points
@@ -12,6 +13,7 @@ Author: wwm
 ```
 
 #### **Challenge Files**
+
 script.py:
 
 ```
@@ -39,6 +41,7 @@ output.png:
 ![Output](images/output.png)
 
 ### **Solution**
+
 I first noticed that it seems like the output of the script gives a fully jumbled png file. Looking more closely, we can see that the script does 2 things to "flag.png" before outputting it: 
 1. It xors all the pixels with a randomly generated key
 2. It then moves each pixel to a new location
