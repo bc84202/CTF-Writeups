@@ -62,10 +62,10 @@ def chinese_remainder(n, a):
     prod = reduce(lambda a, b: a*b, n)
     for n_i, a_i in zip(n,a):
         p = prod//n_i
-        sum += a_i * mul_inv(p, n_i) * p
+        sum += a_i * mod_inv(p, n_i) * p
     return sum % prod
     
-def mul_inv(a, b):
+def mod_inv(a, b):
     b0 = b
     x0, x1 = 0,1
     if b == 1:
@@ -95,6 +95,6 @@ print(long_to_bytes(r))
 
 Running the script gives me: `"hello there can you pls nominate my map https://osu.ppy.sh/beatmapsets/2436259 :steamhappy: i can bribe you with a flag if you do: osu{pr3tty_pl3453_w1th_4_ch3rry_0n_t0p!?:pleading:}"` 
 
-Interestingly, you had to add $N$ to $C$ 254 times before you get a perfect fifth power. The textbook Håstad’s Broadcast Attack actually assumes that $m^e \le N$, which gives $m^e=C$, but that wasn't the case here, likely because of all the extra buffer the author put into the plaintext that made $m$ really big.
+Interestingly, you had to add $N$ to $C$ 254 times before you get a perfect fifth power. The textbook Håstad’s Broadcast Attack actually assumes that $m^e < N$, which gives $m^e=C$, but that wasn't the case here, likely because of all the extra buffer the author put into the plaintext that made $m$ really big.
 
 The flag is: `osu{pr3tty_pl3453_w1th_4_ch3rry_0n_t0p!?:pleading:}`.
