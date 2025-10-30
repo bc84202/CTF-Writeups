@@ -97,8 +97,8 @@ for out, key in zip(output_bits, key):
             flag_bits = flag_bits + "1"
 
 flag = []
-for _ in flag_bits:
-    flag.append(int(_))
+for bit in flag_bits:
+    flag.append(int(bit))
 
 print(bits_to_str(flag))
 ```
