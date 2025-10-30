@@ -68,7 +68,7 @@ Then I noticed that I am also given a list of 0's and 1's that are the results o
 
 However, from here, I realized that I could just brute force this as there are only $2^{21}$ possible values of key1. So I wrote a script that loops from $0$ to $2^{21} - 1$ to account for all possible values of key1, which then performs the function on key1 and then xnors with the list in output.txt to get key2. After that, I perform the same hashing function to get the keystring, and xor that with the unhexed ciphertext. I then run a check to see if I end up with bytes that start with "osu" as that is the flag format for this ctf.
 
-Note that I reconstruct key1 slightly differently than how the challenge script does it as I decided to not remove the most significant bit each time, but instead increase all the indices used to find the next digit by 1. I did this in order to keep the first 21 bits of key1 so I can use it more easily later. I also didn't reconstruct the whole 72 bit that the output gave me because I realized I only need to go up to 29 bits to allow me to recover key2, I didn't care about the rest. I also slightly shortened their definition of xnor_gate.
+Note that I reconstruct key1 slightly differently than how the challenge script does it as I decided to not remove the most significant bit each time, but instead increase all the indices used to find the next digit by 1. I did this in order to keep the first 21 bits of key1 so I can use it more easily later. I also didn't reconstruct the whole 72 bit that the output gave me because I realized I only need to go up to 29 bits to allow me to recover key2, and I didn't care about the rest. I also slightly shortened their definition of xnor_gate.
 
 Thus, this is my script:
 ```
